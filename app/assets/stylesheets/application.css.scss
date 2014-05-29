@@ -22,19 +22,66 @@ body {
   background-color: #1F1F1F;
 }
 
+.emp {
+  font-family: 'Open Sans condensed' !important;
+}
+
+.big {
+  font-size: 80px;
+}
+
 .fa {
   font-family: FontAwesome !important;
 }
 
-.navbar-default {
-  background-color: transparent;
+.navbar-inverse {
   border: 0px !important;
+  border-top: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: white;
+.navbar-brand {
+  font-size: 35px;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-brand {
   font-family: 'Open Sans condensed' !important;
+  font-size: 35px;
   &:hover {
-    color: #C4C4C4 !important;
+  }
+}
+
+a {
+  color: #e98c08;
+  &:hover {
+    color: #BA6F04 !important;
+  }
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #525252;
+  color: white;
+  font-family: 'Open Sans' !important;
+  a {
+    color: #525252;
+    font-family: 'Open Sans' !important;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+  nav li {
+    font-size: 75%;
   }
 }
