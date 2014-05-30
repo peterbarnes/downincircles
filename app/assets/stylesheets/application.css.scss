@@ -15,11 +15,15 @@
  */
 * {
   font-family: 'Open Sans' !important;
-  color: white;
 }
 
 body {
   background-color: #1F1F1F;
+  color: white;
+}
+
+.jumbotron {
+  background-color: transparent;
 }
 
 .emp {
@@ -51,11 +55,31 @@ body {
   }
 }
 
+.soclinks {
+  color: #e98c08 !important;
+  &:hover {
+    color: #BA6F04 !important;
+  }
+}
+
 a {
   color: #e98c08;
   &:hover {
     color: #BA6F04 !important;
   }
+}
+
+button {
+  background-color: #e98c08 !important;
+  border: 0px !important;
+  &:hover {
+    background-color: #BA6F04 !important;
+  }
+  
+}
+
+button.close {
+  background-color: transparent !important;
 }
 
 footer {
