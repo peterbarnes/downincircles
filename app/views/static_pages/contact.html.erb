@@ -1,55 +1,64 @@
-<div class="row">
-  <div class="col-md-12 jumbotron text-center">
-    <h1 class="emp">We love connecting with our fans and playing shows.  &nbsp;Here is how you can connect with us.</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 jumbotron text-center">
+      <h1 class="emp">We love connecting with our fans and playing shows.  &nbsp;Here is how you can connect with us.</h1>
+    </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-6">
-    <h2 class="text-center emp">Follow us on these social networks</h2>
-    <div class="soclinks">
-      <div class="col-md-3 text-center">
-        <a href="https://www.facebook.com/downincircles" target="blank"><i class="fa fa-facebook-square fa-5x"></i></a>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="https://www.youtube.com/user/DownInCircles" target="blank"><i class="fa fa-youtube-play fa-5x"></i></a>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="http://instagram.com/down_in_circles" target="blank"><i class="fa fa-instagram fa-5x"></i></a>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="https://twitter.com/downincircles" target="blank"><i class="fa fa-twitter-square fa-5x"></i></a>
-      </div>
-      <div class="col-md-3 text-center">
-        <a href="http://downincircles.tumblr.com/" target="blank"><i class="fa fa-tumblr-square fa-5x"></i></a>
+<div style="background-color: #2e2e2e;">
+  <div class="container banner">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center emp big">Follow us on these social networks</h2>
+        <div class="soclinks">
+          <div class="col-md-3 text-center">
+            <a href="https://www.facebook.com/downincircles" target="blank"><i class="fa fa-facebook-square fa-5x"></i></a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://www.youtube.com/user/DownInCircles" target="blank"><i class="fa fa-youtube-play fa-5x"></i></a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="http://instagram.com/down_in_circles" target="blank"><i class="fa fa-instagram fa-5x"></i></a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://twitter.com/downincircles" target="blank"><i class="fa fa-twitter-square fa-5x"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <h2 class="text-center emp">Send us an email</h2>
-    <%= form_tag("/send", method: "post") do %>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <%= label_tag(:name, "Name") %>
-          <%= text_field_tag(:name, params[:name], class: "form-control") %>
-        </div>
-        <div class="col-md-12 form-group">
-          <%= label_tag(:email, "Email") %>
-          <%= text_field_tag(:email, params[:email], class: "form-control") %>
-        </div>
-        <div class="col-md-12 form-group">
-          <%= label_tag(:body, "Message") %>
-          <%= text_area_tag(:body, params[:body], class: "form-control", rows: "6") %>
-        </div>
+</div>
+<div style="background-color: #454545;">
+  <div class="container banner">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center emp big">Send us an email</h2>
+        <%= form_tag("/send", method: "post") do %>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <%= label_tag(:name, "Name") %>
+              <%= text_field_tag(:name, params[:name], class: "form-control") %>
+            </div>
+            <div class="col-md-12 form-group">
+              <%= label_tag(:email, "Email") %>
+              <%= text_field_tag(:email, params[:email], class: "form-control") %>
+            </div>
+            <div class="col-md-12 form-group">
+              <%= label_tag(:body, "Message") %>
+              <%= text_area_tag(:body, params[:body], class: "form-control", rows: "6") %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1">
+              <button type="submit" 
+                      class="btn btn-primary">
+                   <i class="fa fa-envelope-o"></i> 
+                  Send
+              </button>
+            </div>
+          </div>
+        <% end %>
       </div>
-      <div class="row">
-        <div class="col-md-1">
-          <button type="submit" 
-                  class="btn btn-primary">
-               <i class="fa fa-envelope-o"></i> 
-              Send
-          </button>
-        </div>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>
