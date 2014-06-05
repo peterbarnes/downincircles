@@ -1,5 +1,52 @@
-<div class="row">
-  <div class="col-md-12">
-    <h1>static_pages#index</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag('pic1.png', class: "center-block img-responsive") %>
+          </div>
+          <div class="item">
+            <%= image_tag('pic2.png', class: "center-block img-responsive") %>
+          </div>
+          <div class="item">
+            <%= image_tag('pic3.png', class: "center-block img-responsive") %>
+          </div>
+          <div class="item">
+            <%= image_tag('pic4.png', class: "center-block img-responsive") %>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left fa fa-angle-double-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right fa fa-angle-double-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color: #2e2e2e; margin-top: 20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center emp big">UPCOMING SHOWS</h1>
+        <ul>
+          <li class="show">
+            <h2>June 18 <small><a href="https://www.facebook.com/events/787982771221098/" target="blank">Meadow Rave, Count To Four, Down In Circles</a></small></h2>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
