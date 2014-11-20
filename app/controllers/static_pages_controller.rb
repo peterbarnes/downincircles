@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
     
   end
 
+  def shows
+    
+  end
+
   def sendit
     if Band.email(params).deliver
       flash[:success] = "Your message has been sent, we will get back to you as soon as we can!"

@@ -13,17 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+ $red: #BD1E56;
 * {
-  font-family: 'Open Sans' !important;
+  font-family: 'Lato' !important;
+  font-weight: 100 !important;
 }
 
 body {
-  background-color: #1F1F1F;
+  background-color: #383838;
   color: white;
+}
+
+.alert {
+  border-bottom: 1px solid #1f1f1f !important;
+  border-radius: 0px !important;
+  margin-top: 20px !important;
 }
 
 ul {
   list-style: none;
+}
+
+.no-margin{
+  margin: 0px !important;
 }
 
 .jumbotron {
@@ -38,46 +51,53 @@ ul {
   font-size: 80px;
 }
 
+.soc-link {
+  color: $red !important;
+  &:hover {
+    color: darken($red, 10%) !important;
+  }
+}
+
 .fa {
   font-family: FontAwesome !important;
 }
 
-.navbar-inverse {
-  border: 0px !important;
-  border-top: 1px solid #000000 !important;
-  border-bottom: 1px solid #000000 !important;
+.release {
+  margin-top: 40px;
 }
 
-.navbar-brand {
-  font-size: 35px;
+.no-bottom {
+  margin-bottom: 0px !important;
 }
 
-.navbar-inverse .navbar-nav>li>a, .navbar-brand {
-  font-family: 'Open Sans condensed' !important;
-  font-size: 35px;
-  &:hover {
-  }
+.gray {
+  color: #7D7D7D;
 }
 
-.soclinks {
-  color: #e98c08 !important;
-  &:hover {
-    color: #BA6F04 !important;
-  }
+.big-bottom {
+  margin-bottom: 40px;
+}
+
+.navigation {
+  background-color: #303030;
+  border-bottom: 1px solid #1f1f1f;
+  padding-top: 20px;
+  padding-bottom: 20px; 
 }
 
 a {
-  color: #e98c08;
+  color: white !important;
   &:hover {
-    color: #BA6F04 !important;
+    color: #BD1E56 !important;
+    text-decoration: none; 
   }
 }
 
 button {
-  background-color: #e98c08 !important;
+  background-color: $red !important;
   border: 0px !important;
   &:hover {
-    background-color: #BA6F04 !important;
+    background-color: darken($red, 10%) !important;
   }
   
 }
@@ -86,50 +106,10 @@ button.close {
   background-color: transparent !important;
 }
 
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #525252;
-  color: white;
-  font-family: 'Open Sans' !important;
-  a {
-    color: #525252;
-    font-family: 'Open Sans' !important;
-    &:hover {
-      color: #222;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
-  nav li {
-    font-size: 75%;
-  }
-}
-
-.tracklist {
-  border: 1px solid #575757;
-  padding: 20px;
-  padding-bottom: 25px;
-  border-radius: 10px;
-  background-color: #2B2B2B;
-}
-
-.show {
-  border: 1px solid #575757;
-  border-radius: 10px;
-  padding: 10px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-}
-
 .big-top {
-  margin-top: 50px !important;
+  margin-top: 30px !important;
+}
+
+.container-fluid {
+  padding: 0px !important;
 }
